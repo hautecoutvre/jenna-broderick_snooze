@@ -1,0 +1,22 @@
+html {
+  background: black;
+}
+
+.wrapper {
+  height: 1080px;
+  width: 1920px;
+  background-color: rgb(89, 89, 89) 77, 165, 165;
+  margin: auto;
+}
+
+.main-screen {
+  height: 756px;
+  width: 1304px;
+  background-color: aliceblue;
+  border: 24px;
+}
+
+.btn {
+  height: 87px;
+  width: 296px;
+}
