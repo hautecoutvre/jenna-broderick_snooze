@@ -1,22 +1,67 @@
 html {
-  background: black;
+  background-image: url(../images/full-bg-copy.jpg);
 }
 
 .wrapper {
   height: 1080px;
   width: 1920px;
-  background-color: rgb(89, 89, 89) 77, 165, 165;
+  background-color: rgb(196, 18, 18) 77, 165, 165;
   margin: auto;
 }
 
 .main-screen {
   height: 756px;
   width: 1304px;
-  background-color: aliceblue;
+  background-color: rgb(28, 51, 71);
   border: 24px;
+  margin: 0 0 0 1em;
+  border-radius: 2em;
 }
 
-.btn {
+.btn-primary {
+  height: 54px;
+  width: 219px;
+  margin: 0 0 0 10em;
+  border-radius: 3em;
+}
+
+.btn-secondary {
+  height: 54px;
+  width: 219px;
+  border-radius: 3em;
+  margin: 2em;
+}
+
+.btn-third {
+  height: 54px;
+  width: 219px;
+  border-radius: 3em;
+}
+
+.btn-fourth {
+  height: 54px;
+  width: 219px;
+  border-radius: 3em;
+  margin: 2em;
+}
+
+.btn-fifth {
+  height: 104px;
+  width: 511px;
+  border-radius: 7em;
+  margin: 0 0 3em 0;
+}
+
+.btn-six {
   height: 87px;
   width: 296px;
+  border-radius: 5em;
+  float: right;
+}
+
+.btn-seven {
+  height: 87px;
+  width: 296px;
+  border-radius: 5em;
+  float: right;
 }
