@@ -1,55 +1,96 @@
 html {
-  background-image: url(../images/full-bg-copy.jpg);
+  background-image: url(../images/final-bg-full.jpg);
+  background-position: center;
+  font-family: "Silom";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: "Satisfy";
 }
 
 .wrapper {
-  height: 1080px;
-  width: 1920px;
+  max-height: 1080px;
+  max-width: 1920px;
   background-color: rgb(196, 18, 18) 77, 165, 165;
-  margin: auto;
 }
 
 .main-screen {
   height: 756px;
-  width: 1304px;
-  background-color: rgb(28, 51, 71);
+  max-width: 1304px;
+  background-color: rgb(57, 50, 87);
   border: 24px;
-  margin: 0 0 0 1em;
+  margin: 3em 0 0 1em;
   border-radius: 2em;
+}
+
+.example {
+  background-color: rgb(57, 50, 87);
+  border-radius: 5em;
+  height: 115px;
+  filter: drop-shadow(1px 1px 6px #000000);
 }
 
 .btn-primary {
   height: 54px;
-  width: 219px;
-  margin: 0 0 0 10em;
-  border-radius: 3em;
+  width: 200px;
+  margin: 0 0 0 12em;
+  font-family: inherit;
+  font-size: 1.5em;
+  border-radius: 2em;
+  background-color: rgb(57, 50, 87);
+  border-color: transparent;
+  color: rgb(231, 219, 241);
 }
 
 .btn-secondary {
   height: 54px;
-  width: 219px;
+  width: 200px;
   border-radius: 3em;
-  margin: 2em;
+  font-family: inherit;
+  font-size: 1.5em;
+  background-color: rgb(57, 50, 87);
+  border-color: transparent;
+  color: rgb(231, 219, 241);
 }
 
 .btn-third {
   height: 54px;
-  width: 219px;
+  width: 200px;
   border-radius: 3em;
+  font-family: inherit;
+  font-size: 1.5em;
+  background-color: rgb(57, 50, 87);
+  border-color: transparent;
+  color: rgb(231, 219, 241);
 }
 
 .btn-fourth {
   height: 54px;
-  width: 219px;
+  width: 200px;
   border-radius: 3em;
-  margin: 2em;
+  margin: 1.2em;
+  font-family: inherit;
+  font-size: 1.5em;
+  background-color: rgb(57, 50, 87);
+  border-color: transparent;
+  color: rgb(231, 219, 241);
 }
 
 .btn-fifth {
-  height: 104px;
-  width: 511px;
+  height: 84px;
+  width: 411px;
   border-radius: 7em;
   margin: 0 0 3em 0;
+  font-family: inherit;
+  font-size: 1em;
+  text-align: left;
+  padding: 0 0 0 3rem;
 }
 
 .btn-six {
@@ -57,6 +98,8 @@ html {
   width: 296px;
   border-radius: 5em;
   float: right;
+  font-family: inherit;
+  font-size: 1.5em;
 }
 
 .btn-seven {
@@ -64,4 +107,11 @@ html {
   width: 296px;
   border-radius: 5em;
   float: right;
+  font-family: inherit;
+  font-size: 1.5em;
 }
+
+/* .btn-primary:hover {
+  transition: 0.5s;
+  background-color: rgb(62, 54, 94);
+} */
