@@ -143,8 +143,8 @@ h1 {
 
 .img {
   float: left;
-  height: 756px;
-  max-width: 1290px;
+  height: 730px;
+  width: 1310px;
   z-index: -1;
   position: relative;
   margin-top: 35px;
