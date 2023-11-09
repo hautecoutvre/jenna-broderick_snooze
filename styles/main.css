@@ -1,7 +1,9 @@
 html {
   background-image: url(../images/final-bg-full.jpg);
-  background-position: center;
+  background-size: cover;
   font-family: "Silom";
+  height: 100%;
+  overflow: hidden;
 }
 
 *,
@@ -19,7 +21,7 @@ h1 {
   max-width: 1920px;
 }
 
-.main-screen {
+/* .main-screen {
   height: 756px;
   max-width: 1290px;
   border: 1em solid rgb(111, 103, 147);
@@ -28,7 +30,7 @@ h1 {
   background-image: url(../images/homescreen.jpeg);
   background-position: center center;
   background-size: 116%;
-}
+} */
 
 .example {
   background-color: rgb(57, 50, 87);
@@ -97,32 +99,55 @@ h1 {
   margin: 0.5em 0 3em 0;
   background-color: rgb(171, 163, 200);
   color: rgb(57, 55, 55);
-  border-color: rgb(171, 163, 200);
+  border-color: transparent;
   font-family: inherit;
   font-size: 1.5em;
   text-align: left;
   padding: 0 0 0 3rem;
+  filter: drop-shadow(1px 1px 6px #000000);
+}
+
+.btn-group button {
+  display: block;
+}
+
+#screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn-six {
   height: 87px;
   width: 296px;
   border-radius: 5em;
-  float: right;
   font-family: inherit;
   font-size: 1.5em;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  margin: 0 1.8rem 5rem 0;
+  background-color: rgb(57, 50, 87);
+  color: rgb(171, 163, 200);
 }
 
 .btn-seven {
   height: 87px;
   width: 296px;
   border-radius: 5em;
-  float: right;
   font-family: inherit;
   font-size: 1.5em;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  background-color: rgb(171, 163, 200);
 }
 
-/* .btn-primary:hover {
-  transition: 0.5s;
-  background-color: rgb(62, 54, 94);
-} */
+.img {
+  float: left;
+  height: 756px;
+  max-width: 1290px;
+  z-index: -1;
+  position: relative;
+  margin-top: 35px;
+  border-radius: 5%;
+  border: 0.75em solid rgb(111, 103, 147);
+}
