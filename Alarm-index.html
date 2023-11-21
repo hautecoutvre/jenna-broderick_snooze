@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snooze</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main2.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -13,7 +13,7 @@
         <!-- <section class="example"> -->
         <img class="logo" src="Asset 2.svg" />
         <ul>
-          <li><a href="Alarm-index.html">Alarm Clock</a></li>
+          <li><a href="#">Alarm Clock</a></li>
           <li><a href="#">Audio</a></li>
           <li><a href="#">Coloring</a></li>
           <li><a href="#">Games</a></li>
@@ -38,13 +38,27 @@
       </nav>
 
       <main id="screen">
-        <img class="img" src="pxArt-2.png" alt="homescreen" />
+        <img class="img" src="alarm-bg.jpg" alt="homescreen" />
+        <div id="digital-clock"></div>
+        <script src="scripts/main.js"></script>
+        <div id="alarm-clock" onclick="off()"></div>
+
+        <script>
+          function on() {
+            document.getElementById("alarm-clock").style.display = "block";
+          }
+
+          function off() {
+            document.getElementById("alarm-clock").style.display = "none";
+          }
+        </script>
+
         <div class="btn-group">
           <div class="btn">
-            <button class="btn-six">Register</button>
-          </div>
-          <div>
-            <button class="btn-seven">Log In</button>
+            <button onclick="on()" class="btn-six">Set Time</button>
+            <button class="btn-seven">Alarm Noise</button>
+            <button class="btn-eight">Start/Stop</button>
+            <button class="btn-nine">Nightmode</button>
           </div>
         </div>
       </main>
