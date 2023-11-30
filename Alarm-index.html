@@ -10,14 +10,12 @@
     <div class="wrapper">
       <nav>
         <h1></h1>
-        <!-- <section class="example"> -->
         <img class="logo" src="Asset 2.svg" />
         <ul>
           <li><a href="#">Alarm Clock</a></li>
           <li><a href="#">Audio</a></li>
           <li><a href="#">Coloring</a></li>
           <li><a href="#">Games</a></li>
-          <!-- <li><a href="#" class="search-bar">Search</a></li> -->
         </ul>
         <div class="search">
           <input
@@ -29,19 +27,14 @@
             <span><img class="icon" src="Asset 1.svg" /> </span>
           </button>
         </div>
-        <!-- <button class="btn-primary">Alarm Clock</button>
-          <button class="btn-secondary">Audio</button>
-          <button class="btn-third">Coloring</button>
-          <button class="btn-fourth">Games</button>
-          <button class="btn-fifth">Search</button> -->
-        <!-- </section> -->
       </nav>
-
       <main id="screen">
         <img class="img" src="alarm-bg.jpg" alt="homescreen" />
         <div id="digital-clock"></div>
         <script src="scripts/main.js"></script>
-        <div id="alarm-clock" onclick="off()"></div>
+        <div id="alarm-clock" onclick="off()">
+          <div id="text">How do I put noises in lol</div>
+        </div>
 
         <script>
           function on() {
@@ -55,8 +48,8 @@
 
         <div class="btn-group">
           <div class="btn">
-            <button onclick="on()" class="btn-six">Set Time</button>
-            <button class="btn-seven">Alarm Noise</button>
+            <button class="btn-six">Set Time</button>
+            <button onclick="on()" class="btn-seven">Alarm Noise</button>
             <button class="btn-eight">Start/Stop</button>
             <button class="btn-nine">Nightmode</button>
           </div>

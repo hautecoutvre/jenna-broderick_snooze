@@ -23,30 +23,15 @@ html {
     padding: 0.5em 0;
     border: 1px;
   }
+  nav {
+    background-color: rgb(57, 50, 87);
+    border-radius: 5em;
+    filter: drop-shadow(1px 1px 6px #000000);
+    height: 130px;
+    width: 95%;
+    margin: 0 0 0 3em;
+  }
 }
-
-/* .wrapper {
-  max-height: 1080px;
-  max-width: 1920px;
-} */
-
-/* .main-screen {
-  height: 756px;
-  max-width: 1290px;
-  border: 1em solid rgb(111, 103, 147);
-  margin: 3em 0 0 1em;
-  border-radius: 1em;
-  background-image: url(../images/homescreen.jpeg);
-  background-position: center center;
-  background-size: 116%;
-} */
-
-/* .example {
-  background-color: rgb(57, 50, 87);
-  border-radius: 5em;
-  height: 115px;
-  filter: drop-shadow(1px 1px 6px #000000);
-} */
 
 .inner-image {
   display: block;
@@ -73,11 +58,11 @@ nav {
 nav ul {
   list-style-type: none;
   text-align: center;
-  padding: 0.25em 0 0 0;
-  margin: 0 0 0 18em;
+  margin: 0 0 0 15em;
   font-size: 18px;
   position: absolute;
-  top: 65px;
+  top: 50px;
+  cursor: pointer;
 }
 
 nav li {
@@ -130,6 +115,7 @@ nav .search {
   border-radius: 5em;
   border: none;
   background-color: rgb(171, 163, 200);
+  cursor: pointer;
 }
 
 .search .search-button:active {
@@ -137,65 +123,6 @@ nav .search {
   border: none;
   text-decoration: none;
 }
-
-/* .btn-primary {
-  height: 54px;
-  width: 200px;
-  margin: 0 0 0 1em;
-  font-family: inherit;
-  font-size: 1.5em;
-  border-radius: 2em;
-  background-color: rgb(57, 50, 87);
-  border-color: transparent;
-  color: rgb(171, 163, 200);
-}
-
-.btn-secondary {
-  height: 54px;
-  width: 200px;
-  border-radius: 3em;
-  font-family: inherit;
-  font-size: 1.5em;
-  background-color: rgb(57, 50, 87);
-  border-color: transparent;
-  color: rgb(171, 163, 200);
-}
-
-.btn-third {
-  height: 54px;
-  width: 200px;
-  border-radius: 3em;
-  font-family: inherit;
-  font-size: 1.5em;
-  background-color: rgb(57, 50, 87);
-  border-color: transparent;
-  color: rgb(171, 163, 200);
-}
-
-.btn-fourth {
-  height: 54px;
-  width: 200px;
-  border-radius: 3em;
-  font-family: inherit;
-  font-size: 1.5em;
-  background-color: rgb(57, 50, 87);
-  border-color: transparent;
-  color: rgb(171, 163, 200);
-}
-
-.btn-fifth {
-  height: 80px;
-  width: 411px;
-  border-radius: 7em;
-  background-color: rgb(171, 163, 200);
-  color: rgb(57, 55, 55);
-  border-color: transparent;
-  font-family: inherit;
-  font-size: 1.5em;
-  text-align: left;
-  padding: 0 0 0 3rem;
-  filter: drop-shadow(1px 1px 6px #000000);
-} */
 
 .btn-group button {
   display: block;
@@ -218,6 +145,7 @@ nav .search {
   margin: 0 2.5rem 5rem 0;
   background-color: rgb(57, 50, 87);
   color: rgb(171, 163, 200);
+  cursor: pointer;
 }
 
 .btn-seven {
@@ -229,6 +157,7 @@ nav .search {
   border-color: transparent;
   filter: drop-shadow(1px 1px 6px #000000);
   background-color: rgb(171, 163, 200);
+  cursor: pointer;
 }
 
 .img {

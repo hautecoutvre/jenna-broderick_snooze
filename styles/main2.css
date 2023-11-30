@@ -23,30 +23,15 @@ html {
     padding: 0.5em 0;
     border: 1px;
   }
-}
-
-/* .wrapper {
-    max-height: 1080px;
-    max-width: 1920px;
-  } */
-
-/* .main-screen {
-    height: 756px;
-    max-width: 1290px;
-    border: 1em solid rgb(111, 103, 147);
-    margin: 3em 0 0 1em;
-    border-radius: 1em;
-    background-image: url(../images/homescreen.jpeg);
-    background-position: center center;
-    background-size: 116%;
-  } */
-
-/* .example {
+  nav {
     background-color: rgb(57, 50, 87);
     border-radius: 5em;
-    height: 115px;
     filter: drop-shadow(1px 1px 6px #000000);
-  } */
+    height: 130px;
+    width: 95%;
+    margin: 0 0 0 3em;
+  }
+}
 
 .inner-image {
   display: block;
@@ -73,11 +58,11 @@ nav {
 nav ul {
   list-style-type: none;
   text-align: center;
-  padding: 0.25em 0 0 0;
-  margin: 0 0 0 18em;
+  margin: 0 0 0 15em;
   font-size: 18px;
   position: absolute;
-  top: 65px;
+  top: 50px;
+  cursor: pointer;
 }
 
 nav li {
@@ -130,6 +115,7 @@ nav .search {
   border-radius: 5em;
   border: none;
   background-color: rgb(171, 163, 200);
+  cursor: pointer;
 }
 
 .search .search-button:active {
@@ -137,65 +123,6 @@ nav .search {
   border: none;
   text-decoration: none;
 }
-
-/* .btn-primary {
-    height: 54px;
-    width: 200px;
-    margin: 0 0 0 1em;
-    font-family: inherit;
-    font-size: 1.5em;
-    border-radius: 2em;
-    background-color: rgb(57, 50, 87);
-    border-color: transparent;
-    color: rgb(171, 163, 200);
-  }
-  
-  .btn-secondary {
-    height: 54px;
-    width: 200px;
-    border-radius: 3em;
-    font-family: inherit;
-    font-size: 1.5em;
-    background-color: rgb(57, 50, 87);
-    border-color: transparent;
-    color: rgb(171, 163, 200);
-  }
-  
-  .btn-third {
-    height: 54px;
-    width: 200px;
-    border-radius: 3em;
-    font-family: inherit;
-    font-size: 1.5em;
-    background-color: rgb(57, 50, 87);
-    border-color: transparent;
-    color: rgb(171, 163, 200);
-  }
-  
-  .btn-fourth {
-    height: 54px;
-    width: 200px;
-    border-radius: 3em;
-    font-family: inherit;
-    font-size: 1.5em;
-    background-color: rgb(57, 50, 87);
-    border-color: transparent;
-    color: rgb(171, 163, 200);
-  }
-  
-  .btn-fifth {
-    height: 80px;
-    width: 411px;
-    border-radius: 7em;
-    background-color: rgb(171, 163, 200);
-    color: rgb(57, 55, 55);
-    border-color: transparent;
-    font-family: inherit;
-    font-size: 1.5em;
-    text-align: left;
-    padding: 0 0 0 3rem;
-    filter: drop-shadow(1px 1px 6px #000000);
-  } */
 
 .btn-group button {
   display: block;
@@ -209,16 +136,26 @@ nav .search {
 
 #alarm-clock {
   position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 50%; /* Full width (cover the whole page) */
-  height: 50%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  display: none;
+  width: 50%;
+  height: 50%;
+  top: 305px;
+  left: 229px;
+  border-radius: 13em;
+  background-color: rgba(57, 50, 87, 1);
+  z-index: 2;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: rgb(171, 163, 200);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #digital-clock {
@@ -247,6 +184,7 @@ nav .search {
   margin: 0 2.5rem 5rem 0;
   color: rgb(57, 50, 87);
   background-color: rgb(171, 163, 200);
+  cursor: pointer;
 }
 
 .btn-seven {
@@ -260,6 +198,7 @@ nav .search {
   background-color: rgb(171, 163, 200);
   margin: 0 2.5rem 5rem 0;
   color: rgb(57, 50, 87);
+  cursor: pointer;
 }
 
 .btn-eight {
@@ -273,6 +212,7 @@ nav .search {
   background-color: rgb(171, 163, 200);
   margin: 0 2.5rem 5rem 0;
   color: rgb(57, 50, 87);
+  cursor: pointer;
 }
 
 .btn-nine {
@@ -285,6 +225,7 @@ nav .search {
   filter: drop-shadow(1px 1px 6px #000000);
   background-color: rgb(171, 163, 200);
   color: rgb(57, 50, 87);
+  cursor: pointer;
 }
 
 .img {
