@@ -134,57 +134,20 @@ nav .search {
   align-items: center;
 }
 
-/* #alarm-clock {
-  position: fixed; /* Sit on top of the page content */
-/* display: none;
-  width: 50%;
-  height: 50%;
-  top: 305px;
-  left: 229px;
-  border-radius: 13em;
-  background-color: rgba(57, 50, 87, 1);
-  z-index: 2;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-} */
-
-/* #text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: rgb(171, 163, 200);
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-} */
-
-#digital-clock {
+.overlay-container {
   position: fixed;
   background-color: rgba(171, 163, 200, 0.8);
   color: rgb(57, 50, 87);
-  width: 40%;
-  margin: 0 0 0 260px;
-  padding: 50px;
+  width: 55%;
+  height: 50%;
+  margin: 40px 0 0 125px;
+  padding: 70px;
   font-family: inherit;
-  border-radius: 7em;
+  border-radius: 1em;
   font-size: 5em;
   text-align: center;
   display: overlay;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#nightmode {
-  position: fixed; /* Sit on top of the page content */
-  display: none;
-  width: 120%;
-  height: 110%;
-  top: -20px;
-  margin: 0 0 0 -10px;
-  background-color: rgba(23, 21, 32, 0.9);
-  z-index: 2;
-  cursor: pointer;
-  display: overlay;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .btn-six {
@@ -211,33 +174,6 @@ nav .search {
   filter: drop-shadow(1px 1px 6px #000000);
   background-color: rgb(171, 163, 200);
   margin: 0 2.5rem 5rem 0;
-  color: rgb(57, 50, 87);
-  cursor: pointer;
-}
-
-.btn-eight {
-  height: 87px;
-  width: 296px;
-  border-radius: 5em;
-  font-family: inherit;
-  font-size: 1.5em;
-  border-color: transparent;
-  filter: drop-shadow(1px 1px 6px #000000);
-  background-color: rgb(171, 163, 200);
-  margin: 0 2.5rem 5rem 0;
-  color: rgb(57, 50, 87);
-  cursor: pointer;
-}
-
-.btn-nine {
-  height: 87px;
-  width: 296px;
-  border-radius: 5em;
-  font-family: inherit;
-  font-size: 1.5em;
-  border-color: transparent;
-  filter: drop-shadow(1px 1px 6px #000000);
-  background-color: rgb(171, 163, 200);
   color: rgb(57, 50, 87);
   cursor: pointer;
 }

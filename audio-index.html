@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snooze</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main3.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -14,8 +14,8 @@
         <img class="logo" src="Asset 2.svg" />
         <ul>
           <li><a href="Alarm-index.html">Alarm Clock</a></li>
-          <li><a href="audio-index.html">Audio</a></li>
-          <li><a href="#">Coloring</a></li>
+          <li><a href="#">Audio</a></li>
+          <li><a href="coloring-index.html">Coloring</a></li>
           <li><a href="#">Games</a></li>
           <!-- <li><a href="#" class="search-bar">Search</a></li> -->
         </ul>
@@ -38,13 +38,37 @@
       </nav>
 
       <main id="screen">
-        <img class="img" src="pxArt-2.png" alt="homescreen" />
+        <img class="img" src="pxArt-3.png" alt="homescreen" />
+        <div id="nightmode" onclick="off()"></div>
+
+        <script>
+          function on() {
+            document.getElementById("nightmode").style.display = "block";
+          }
+
+          function off() {
+            document.getElementById("nightmode").style.display = "none";
+          }
+        </script>
+
+        <div class="overlay-container">
+          <div class="overlay-content">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/2Rk3qV9DAdiAZ3JX9Ep9yw?utm_source=generator&theme=0"
+              width="100%"
+              height="475"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
         <div class="btn-group">
           <div class="btn">
-            <button class="btn-six">Register</button>
-          </div>
-          <div>
-            <button class="btn-seven">Log In</button>
+            <button class="btn-six">Set Time</button>
+            <button onclick="on()" class="btn-nine">Nightmode</button>
           </div>
         </div>
       </main>

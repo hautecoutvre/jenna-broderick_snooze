@@ -53,3 +53,7 @@ function update(t) {
 }
 
 Time();
+
+$(".carousel").carousel({
+  interval: 2000,
+});
