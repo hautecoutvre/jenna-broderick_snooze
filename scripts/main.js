@@ -52,8 +52,29 @@ function update(t) {
   }
 }
 
-Time();
+$(document).ready(function () {
+  // Activate Carousel
+  $("#carouselExampleControls").carousel({ interval: 500 });
 
-$(".carousel").carousel({
-  interval: 2000,
+  // Enable Carousel Indicators
+  $(".item1").click(function () {
+    $("#carouselExampleControls").carousel(0);
+  });
+  $(".item2").click(function () {
+    $("#carouselExampleControls").carousel(1);
+  });
+  $(".item3").click(function () {
+    $("#carouselExampleControls").carousel(2);
+  });
+  $(".item4").click(function () {
+    $("#carouselExampleControls").carousel(3);
+  });
+
+  // Enable Carousel Controls
+  $(".left").click(function () {
+    $("#carouselExampleControls").carousel("prev");
+  });
+  $(".right").click(function () {
+    $("#carouselExampleControls").carousel("next");
+  });
 });
