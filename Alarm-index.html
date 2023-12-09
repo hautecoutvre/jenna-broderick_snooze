@@ -30,11 +30,11 @@
     </nav>
     <main id="screen">
       <img class="img" src="alarm-bg.jpg" alt="homescreen" />
-      <div id="digital-clock"></div>
+      <!-- <div id="digital-clock"></div>
       <script src="scripts/main.js"></script>
-      <!-- <div id="alarm-clock" onclick="off()">
-        <div id="text">How do I put noises in lol</div>
-      </div>
+      <div id="alarm-clock" onclick="off()"> -->
+      <!-- <div id="text">How do I put noises in lol</div> -->
+      <!-- </div>
       <div>
         <script>
           function on() {
@@ -47,24 +47,61 @@
         </script>
       </div> -->
 
-      <div id="nightmode" onclick="off(nightmode)">
-        <div>
-          <script>
-            function on(nightmode) {
-              document.getElementById("nightmode").style.display = "block";
-            }
+      <!-- <div id="nightmode" onclick="off(nightmode)">
+          <div>
+            <script>
+              function on(nightmode) {
+                document.getElementById("nightmode").style.display = "block";
+              }
 
-            function off(nightmode) {
-              document.getElementById("nightmode").style.display = "none";
-            }
-          </script>
-        </div>
+              function off(nightmode) {
+                document.getElementById("nightmode").style.display = "none";
+              }
+            </script>
+          </div>
+        </div> -->
+      <div id="main-container"></div>
+      <h2 id="clock"></h2>
+      <div id="alarm-container">
+        <label>
+          <div>
+            <select id="alarmhrs"></select>
+          </div>
+        </label>
+        <label>
+          <div>
+            <select id="alarmmins"></select>
+          </div>
+        </label>
+        <label>
+          <div>
+            <select id="alarmsecs"></select>
+          </div>
+        </label>
+        <label>
+          <div>
+            <select id="ampm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+        </label>
       </div>
 
+      <div id="buttonHolder">
+        <div>
+          <button id="setButton" onClick="alarmSet()">Set Alarm</button>
+        </div>
+
+        <div>
+          <button id="clearButton" onClick="alarmClear()">Clear Alarm</button>
+          <script type="text/javascript" src="scripts/main.js"></script>
+        </div>
+      </div>
       <div class="btn-group">
         <div class="btn">
-          <button class="btn-six">Set Time</button>
-          <button class="btn-seven">Alarm Noise</button>
+          <!-- <button class="btn-six">Set Time</button> -->
+          <!-- <button class="btn-seven">Alarm Noise</button> -->
           <button class="btn-eight">Start/Stop</button>
           <button onclick="on(nightmode)" class="btn-nine">Nightmode</button>
         </div>

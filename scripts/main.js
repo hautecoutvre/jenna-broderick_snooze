@@ -1,80 +1,213 @@
-function Time() {
-  // Creating object of the Date class
+// function Time() {
+//   // Creating object of the Date class
+//   var date = new Date();
+
+//   // Get current hour
+//   var hour = date.getHours();
+//   // Get current minute
+//   var minute = date.getMinutes();
+//   // Get current second
+//   var second = date.getSeconds();
+
+//   // Variable to store AM / PM
+//   var period = "";
+
+//   // Assigning AM / PM according to current hour
+//   if (hour >= 12) {
+//     period = "PM";
+//   } else {
+//     period = "AM";
+//   }
+
+//   // Converting the hour in 12-hour format
+//   if (hour == 0) {
+//     hour = 12;
+//   } else {
+//     if (hour > 12) {
+//       hour = hour - 12;
+//     }
+//   }
+
+//   // Updating hour, minute, and second
+//   // if they are less than 10
+//   hour = update(hour);
+//   minute = update(minute);
+//   second = update(second);
+
+//   // Adding time elements to the div
+//   document.getElementById("digital-clock").innerText =
+//     hour + " : " + minute + " : " + second + " " + period;
+
+//   // Set Timer to 1 sec (1000 ms)
+//   setTimeout(Time, 1000);
+// }
+
+// // Function to update time elements if they are less than 10
+// // Append 0 before time elements if they are less than 10
+// function update(t) {
+//   if (t < 10) {
+//     return "0" + t;
+//   } else {
+//     return t;
+//   }
+// }
+
+var sound = new Audio(
+  "https://www.freespecialeffects.co.uk/soundfx/animals/duck1.wav"
+);
+sound.loop = true;
+
+var h2 = document.getElementById("clock");
+
+// display current time by the second
+var currentTime = setInterval(function () {
   var date = new Date();
 
-  // Get current hour
-  var hour = date.getHours();
-  // Get current minute
-  var minute = date.getMinutes();
-  // Get current second
-  var second = date.getSeconds();
+  var hours = 12 - date.getHours();
+  // var hours = date.getHours();
 
-  // Variable to store AM / PM
-  var period = "";
+  var minutes = date.getMinutes();
 
-  // Assigning AM / PM according to current hour
-  if (hour >= 12) {
-    period = "PM";
+  var seconds = date.getSeconds();
+
+  var ampm = date.getHours() < 12 ? "AM" : "PM";
+
+  //convert military time to standard time
+
+  if (hours < 0) {
+    hours = hours * -1;
+  } else if ((hours == 0, 0)) {
+    hours = 12;
   } else {
-    period = "AM";
+    hours = hours;
   }
 
-  // Converting the hour in 12-hour format
-  if (hour == 0) {
-    hour = 12;
-  } else {
-    if (hour > 12) {
-      hour = hour - 12;
+  h2.textContent =
+    addZero(hours) +
+    ":" +
+    addZero(minutes) +
+    ":" +
+    addZero(seconds) +
+    "" +
+    ampm;
+}, 1000);
+
+/*functions to get hour, min, secs, 
+  am or pm, add zero, set alarm time and sound, clear alarm
+*/
+
+function addZero(time) {
+  return time < 10 ? "0" + time : time;
+}
+
+function hoursMenu() {
+  var select = document.getElementById("alarmhrs");
+  var hrs = 12;
+
+  for (i = 1; i <= hrs; i++) {
+    select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+  }
+}
+hoursMenu();
+
+function minMenu() {
+  var select = document.getElementById("alarmmins");
+  var min = 59;
+
+  for (i = 0; i <= min; i++) {
+    select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+  }
+}
+minMenu();
+
+function secMenu() {
+  var select = document.getElementById("alarmsecs");
+  var sec = 59;
+
+  for (i = 0; i <= sec; i++) {
+    select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+  }
+}
+secMenu();
+
+function alarmSet() {
+  var hr = document.getElementById("alarmhrs");
+
+  var min = document.getElementById("alarmmins");
+
+  var sec = document.getElementById("alarmsecs");
+
+  var ap = document.getElementById("ampm");
+
+  var selectedHour = hr.options[hr.selectedIndex].value;
+  var selectedMin = min.options[min.selectedIndex].value;
+  var selectedSec = sec.options[sec.selectedIndex].value;
+  var selectedAP = ap.options[ap.selectedIndex].value;
+
+  var alarmTime =
+    addZero(selectedHour) +
+    ":" +
+    addZero(selectedMin) +
+    ":" +
+    addZero(selectedSec) +
+    selectedAP;
+  console.log("alarmTime:" + alarmTime);
+
+  document.getElementById("alarmhrs").disabled = true;
+  document.getElementById("alarmmins").disabled = true;
+  document.getElementById("alarmsecs").disabled = true;
+  document.getElementById("ampm").disabled = true;
+
+  //when alarmtime is equal to currenttime then play a sound
+  var h2 = document.getElementById("clock");
+
+  /*function to calcutate the current time 
+then compare it to the alarmtime and play a sound when they are equal
+*/
+
+  setInterval(function () {
+    var date = new Date();
+
+    var hours = 12 - date.getHours();
+    // var hours = date.getHours();
+
+    var minutes = date.getMinutes();
+
+    var seconds = date.getSeconds();
+
+    var ampm = date.getHours() < 12 ? "AM" : "PM";
+
+    //convert military time to standard time
+
+    if (hours < 0) {
+      hours = hours * -1;
+    } else if ((hours == 0, 0)) {
+      hours = 12;
+    } else {
+      hours = hours;
     }
-  }
 
-  // Updating hour, minute, and second
-  // if they are less than 10
-  hour = update(hour);
-  minute = update(minute);
-  second = update(second);
+    var currentTime = (h2.textContent =
+      addZero(hours) +
+      ":" +
+      addZero(minutes) +
+      ":" +
+      addZero(seconds) +
+      "" +
+      ampm);
 
-  // Adding time elements to the div
-  document.getElementById("digital-clock").innerText =
-    hour + " : " + minute + " : " + second + " " + period;
+    if (alarmTime == currentTime) {
+      sound.play();
+    }
+  }, 1000);
 
-  // Set Timer to 1 sec (1000 ms)
-  setTimeout(Time, 1000);
+  // console.log('currentTime:' + currentTime);
 }
 
-// Function to update time elements if they are less than 10
-// Append 0 before time elements if they are less than 10
-function update(t) {
-  if (t < 10) {
-    return "0" + t;
-  } else {
-    return t;
-  }
+function alarmClear() {
+  document.getElementById("alarmhrs").disabled = false;
+  document.getElementById("alarmmins").disabled = false;
+  document.getElementById("alarmsecs").disabled = false;
+  document.getElementById("ampm").disabled = false;
+  sound.pause();
 }
-
-$(document).ready(function () {
-  // Activate Carousel
-  $("#carouselExampleControls").carousel({ interval: 500 });
-
-  // Enable Carousel Indicators
-  $(".item1").click(function () {
-    $("#carouselExampleControls").carousel(0);
-  });
-  $(".item2").click(function () {
-    $("#carouselExampleControls").carousel(1);
-  });
-  $(".item3").click(function () {
-    $("#carouselExampleControls").carousel(2);
-  });
-  $(".item4").click(function () {
-    $("#carouselExampleControls").carousel(3);
-  });
-
-  // Enable Carousel Controls
-  $(".left").click(function () {
-    $("#carouselExampleControls").carousel("prev");
-  });
-  $(".right").click(function () {
-    $("#carouselExampleControls").carousel("next");
-  });
-});

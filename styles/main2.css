@@ -133,10 +133,10 @@ nav .search {
   justify-content: space-between;
   align-items: center;
 }
-
-/* #alarm-clock {
-  position: fixed; /* Sit on top of the page content */
-/* display: none;
+/* 
+#alarm-clock {
+  position: fixed;
+  display: none;
   width: 50%;
   height: 50%;
   top: 305px;
@@ -158,7 +158,7 @@ nav .search {
   -ms-transform: translate(-50%, -50%);
 } */
 
-#digital-clock {
+/* #digital-clock {
   position: fixed;
   background-color: rgba(171, 163, 200, 0.8);
   color: rgb(57, 50, 87);
@@ -171,6 +171,144 @@ nav .search {
   text-align: center;
   display: overlay;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+h2 {
+  text-align: center;
+}
+
+#clock {
+  position: fixed;
+  height: 120px;
+  font-size: 100px;
+  font-family: inherit;
+  font-weight: bold;
+  display: flex;
+  top: 380px;
+  left: 350px;
+  color: white;
+  justify-content: center;
+}
+
+#alarm-container {
+  position: fixed;
+  text-align: center;
+  font-family: inherit;
+  font-size: 3em;
+  padding: 0 0 0 3em;
+  color: white;
+  left: 300px;
+}
+
+label {
+  display: inline-block;
+}
+#alarmhrs {
+  height: 70px;
+  width: 70px;
+  font-family: inherit;
+  font-size: 30px;
+  border-radius: 4px;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  background-color: rgb(171, 163, 200);
+  margin: 150px 0 0 30px;
+  color: rgb(57, 50, 87);
+  cursor: pointer;
+  text-decoration: none;
+  left: -100px;
+}
+
+#alarmmins {
+  height: 70px;
+  width: 70px;
+  font-family: inherit;
+  font-size: 30px;
+  border-radius: 4px;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  background-color: rgb(171, 163, 200);
+  margin: 150px 0 0 30px;
+  color: rgb(57, 50, 87);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#alarmsecs {
+  height: 70px;
+  width: 70px;
+  font-family: inherit;
+  font-size: 30px;
+  border-radius: 4px;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  background-color: rgb(171, 163, 200);
+  margin: 150px 0 0 30px;
+  color: rgb(57, 50, 87);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#ampm {
+  height: 70px;
+  width: 70px;
+  font-family: inherit;
+  font-size: 30px;
+  border-radius: 4px;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  background-color: rgb(171, 163, 200);
+  margin: 150px 0 0 30px;
+  color: rgb(57, 50, 87);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.timeofday {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.bigger {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#sounds {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#setButton {
+  position: fixed;
+  color: rgb(57, 50, 87);
+  margin-top: 10px;
+  background-color: rgb(171, 163, 200);
+  height: 87px;
+  width: 296px;
+  border-radius: 5em;
+  font-family: inherit;
+  font-size: 1.5em;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  cursor: pointer;
+  margin: -280px 0 0 15px;
+}
+
+#clearButton {
+  position: fixed;
+  color: rgb(57, 50, 87);
+  margin-top: 10px;
+  background-color: rgb(171, 163, 200);
+  height: 87px;
+  width: 296px;
+  border-radius: 5em;
+  font-family: inherit;
+  font-size: 1.5em;
+  border-color: transparent;
+  filter: drop-shadow(1px 1px 6px #000000);
+  cursor: pointer;
+  margin: -115px 0 0 15px;
 }
 
 #nightmode {
@@ -187,7 +325,7 @@ nav .search {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-.btn-six {
+/* .btn-six {
   height: 87px;
   width: 296px;
   border-radius: 5em;
@@ -199,9 +337,9 @@ nav .search {
   color: rgb(57, 50, 87);
   background-color: rgb(171, 163, 200);
   cursor: pointer;
-}
+} */
 
-.btn-seven {
+/* .btn-seven {
   height: 87px;
   width: 296px;
   border-radius: 5em;
@@ -210,10 +348,10 @@ nav .search {
   border-color: transparent;
   filter: drop-shadow(1px 1px 6px #000000);
   background-color: rgb(171, 163, 200);
-  margin: 0 2.5rem 5rem 0;
+  margin: 190px 2.5rem 5rem 0;
   color: rgb(57, 50, 87);
   cursor: pointer;
-}
+} */
 
 .btn-eight {
   height: 87px;
@@ -224,7 +362,7 @@ nav .search {
   border-color: transparent;
   filter: drop-shadow(1px 1px 6px #000000);
   background-color: rgb(171, 163, 200);
-  margin: 0 2.5rem 5rem 0;
+  margin: 380px 2.5rem 5rem 0;
   color: rgb(57, 50, 87);
   cursor: pointer;
 }
